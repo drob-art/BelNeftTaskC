@@ -1,9 +1,5 @@
 D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\SqlDatabaseProject\bin\Debug\SqlDatabaseProject.dacpac
 D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\SqlDatabaseProject\bin\Debug\SqlDatabaseProject.dll
 D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\SqlDatabaseProject\bin\Debug\SqlDatabaseProject.pdb
-D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\SqlDatabaseProject\obj\Debug\Model.xml
-D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\SqlDatabaseProject\obj\Debug\refactor.xml
-D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\SqlDatabaseProject\obj\Debug\postdeploy.sql
-D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\SqlDatabaseProject\obj\Debug\predeploy.sql
 D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\SqlDatabaseProject\obj\Debug\SqlDatabaseProject.dll
 D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\SqlDatabaseProject\obj\Debug\SqlDatabaseProject.pdb

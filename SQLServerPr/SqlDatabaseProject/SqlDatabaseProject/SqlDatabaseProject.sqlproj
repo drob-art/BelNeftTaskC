@@ -62,4 +62,8 @@
   <ItemGroup>
     <None Include="SqlDatabaseProject.publish.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\abonent.sql" />
+    <Build Include="Tables\phone.sql" />
+  </ItemGroup>
 </Project>
