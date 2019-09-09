@@ -1,0 +1,8 @@
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\ConsoleApplication1\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\ConsoleApplication1\obj\Debug\ConsoleApplication1.Properties.Resources.resources
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\ConsoleApplication1\obj\Debug\DataAccessLayer.csproj.GenerateResource.Cache
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

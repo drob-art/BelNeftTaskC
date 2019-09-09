@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SqlDatabaseProject" Class="DbDataContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SqlDatabaseProject;Integrated Security=True;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="ConsoleApplication1.Properties.Settings" SettingsPropertyName="SqlDatabaseProjectConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.color" Member="colors">
+    <Type Name="color">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="color" Member="color1" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.gos_number" Member="gos_numbers">
+    <Type Name="gos_number">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="number" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="serial" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="region" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="idModelCar" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idColor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.model_car" Member="model_cars">
+    <Type Name="model_car">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="model" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Procedure1" Method="Procedure1">
+    <Parameter Name="param1" Type="System.Int32" DbType="Int" />
+    <Parameter Name="param2" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Procedure1Result">
+      <Column Name="color" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

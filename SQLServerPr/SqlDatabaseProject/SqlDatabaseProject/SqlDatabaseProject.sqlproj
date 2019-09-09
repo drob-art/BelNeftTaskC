@@ -58,12 +58,19 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SqlDatabaseProject.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\abonent.sql" />
-    <Build Include="Tables\phone.sql" />
+    <Build Include="Tables\model_car.sql" />
+    <Build Include="Tables\color.sql" />
+    <Build Include="Tables\gos_number.sql" />
+    <PostDeploy Include="Script.PostDeployment1.sql" />
+    <Build Include="Procedure1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="SqlDatabaseProject.refactorlog" />
   </ItemGroup>
 </Project>

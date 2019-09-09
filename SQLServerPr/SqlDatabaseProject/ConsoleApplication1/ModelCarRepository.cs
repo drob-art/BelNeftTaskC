@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class AbonentRepository : IRepository<Abonents>
+    class ModelCarRepository : IRepository<ModelCar>
     {
-        public void Create(Abonents obj)
+        public void Create(ModelCar obj)
         {
             throw new NotImplementedException();
         }
@@ -18,12 +18,17 @@ namespace ConsoleApplication1
             throw new NotImplementedException();
         }
 
-        public Abonents GetById(int id)
+        public ModelCar GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Abonents obj)
+        public IEnumerable<ModelCar> GetListAll(Func<ModelCar, bool> exp)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(ModelCar obj)
         {
             throw new NotImplementedException();
         }

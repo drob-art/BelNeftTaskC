@@ -1,0 +1,5 @@
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\bin\Debug\UnitTestProject.dll
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\bin\Debug\UnitTestProject.pdb
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\obj\Debug\UnitTestProject.dll
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\obj\Debug\UnitTestProject.pdb

@@ -1,0 +1,10 @@
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.exe.config
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.Properties.Resources.resources
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.GenerateResource.Cache
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.exe
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\BusinessLogicLayer\bin\Debug\ConsoleApplication1.exe
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\BusinessLogicLayer\bin\Debug\ConsoleApplication1.pdb
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.exe
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb

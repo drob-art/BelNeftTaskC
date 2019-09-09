@@ -6,19 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Abonents
+    class ModelCar
     {
-        public int id
-        {
-            get; set;
-        }
-        public string fio
-        {
-            get; set;
-
-        }
-
-
+        public int id { get; set; }
+        public string model { get; set; }
 
     }
 }
