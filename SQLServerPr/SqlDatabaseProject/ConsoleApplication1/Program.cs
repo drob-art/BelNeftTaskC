@@ -10,31 +10,26 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            //DbDataContextDataContext dbda = new DbDataContextDataContext();
 
-            Repository<Color> repositoryColor = new Repository<Color>();
-            var listColors = repositoryColor.GetListAll(obj => true);
-            var l = listColors.ToArray();
-            for (int i = 0; i <= 2; i++) {
-                Console.Write(l[i] + " ");
-            }
-          /*  foreach (var i in listColors)
+            IRepository<Color> repositoryColor = new ColorRepository();
+
+            Color newColor = new Color(11112, "Vitalic");
+            repositoryColor.Create(newColor);
+            
+            //repositoryColor.DeleteById(4);
+
+            Color dsdsf = new Color(2, "222111555");
+            repositoryColor.Update(dsdsf);
+
+            //var listColorsById = repositoryColor.GetById(2);
+            //Console.WriteLine(listColorsById);
+
+            ICollection<Color> listColors = repositoryColor.GetListAll();
+            foreach (var l in listColors)
             {
-                Console.Write(i + " ");
-
-            }*/
-            //System.Console.WriteLine();
-      /*var colors = from color in dbda.colors
-                   select new
-                   {
-                       color.id,
-                       color.color1
-                   };
-      foreach (var i in colors)
-      {
-          Console.Write(i + " ");
-      }*/
-      Console.ReadKey();
+                Console.WriteLine(l);
+            }
+            Console.ReadKey();
         }
     }
 }

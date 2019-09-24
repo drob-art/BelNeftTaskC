@@ -59,6 +59,7 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="Scripts\" />
+    <Folder Include="Snapshots" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SqlDatabaseProject.publish.xml" />

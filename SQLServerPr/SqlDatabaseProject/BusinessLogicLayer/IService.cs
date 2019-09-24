@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    interface IService <T>
+    public interface IService <T>where T : AbstractModel
     {
-        IEnumerable<T> GetListAll(Func<T, bool> exp);
+        ICollection<T> GetListAll();
         T GetById(int id);
         void Update(T obj);
 

@@ -6,31 +6,40 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class GosNumberRepository : IRepository<GosNumber>
+    public class GosNumberRepository : Repository<GosNumber>
     {
-        public void Create(GosNumber obj)
+        public override void Create(GosNumber obj)
         {
-            throw new NotImplementedException();
+            using (DbDataContextDataContext objDataContext = new DbDataContextDataContext())
+            {
+                var table = objDataContext.GetTable<GosNumber>();
+                table.InsertOnSubmit(obj);
+                objDataContext.SubmitChanges();
+            }
         }
 
-        public void DeleteById(int id)
+        public override void DeleteById(int id)
         {
-            throw new NotImplementedException();
+            using (DbDataContextDataContext objDataContext = new DbDataContextDataContext())
+            {
+                var obj = objDataContext.gos_numbers.Single(element => element.id == id);
+                objDataContext.gos_numbers.DeleteOnSubmit(obj);
+                objDataContext.SubmitChanges();
+            }
         }
 
-        public GosNumber GetById(int id)
+        public override void Update(GosNumber obj)
         {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<GosNumber> GetListAll(Func<GosNumber, bool> exp)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(GosNumber obj)
-        {
-            throw new NotImplementedException();
+            using (DbDataContextDataContext objDataContext = new DbDataContextDataContext())
+            {
+                var gn = objDataContext.gos_numbers.Single(element => element.id == obj.id);
+                gn.number = obj.number;
+                gn.region = obj.region;
+                gn.serial = obj.serial;
+                gn.idColor = obj.idColor;
+                gn.idModelCar = obj.idModelCar;
+                objDataContext.SubmitChanges();
+            }
         }
     }
 }

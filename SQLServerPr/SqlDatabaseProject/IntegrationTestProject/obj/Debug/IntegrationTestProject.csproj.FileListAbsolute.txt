@@ -1,0 +1,10 @@
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\IntegrationTestProject\bin\Debug\IntegrationTestProject.dll.config
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\IntegrationTestProject\bin\Debug\IntegrationTestProject.dll
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\IntegrationTestProject\bin\Debug\IntegrationTestProject.pdb
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\IntegrationTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\IntegrationTestProject\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\IntegrationTestProject\obj\Debug\IntegrationTestProject.dll
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\IntegrationTestProject\obj\Debug\IntegrationTestProject.pdb
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\IntegrationTestProject\bin\Debug\IntegrationTestProject.dll.CodeAnalysisLog.xml
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\IntegrationTestProject\bin\Debug\IntegrationTestProject.dll.lastcodeanalysissucceeded
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\IntegrationTestProject\obj\Debug\IntegrationTestProject.csprojResolveAssemblyReference.cache

@@ -6,45 +6,37 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Repository<T> : IRepository<T> where T : class
+    public abstract class Repository<T> : IRepository<T> where T : AbstractModel
     {
-        protected DbDataContextDataContext dataContext = new DbDataContextDataContext();
-        public void Create(T obj)
+        public Repository()
         {
-            throw new NotImplementedException();
         }
-
-        public void DeleteById(int id)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract void Create(T obj);
 
         public T GetById(int id)
         {
-            throw new NotImplementedException();
+            using (DbDataContextDataContext objDataContext = new DbDataContextDataContext())
+            {
+                var table = objDataContext.GetTable<T>();
+                return table.Where<T>(obj => obj.id == id).DefaultIfEmpty().Single();
+            }
         }
 
-        public IEnumerable<T> GetListAll(Func<T, bool> exp)
+        public ICollection<T> GetListAll()
         {
-            return GetTable.Where<T>(exp);
+            using (DbDataContextDataContext objDataContext = new DbDataContextDataContext())
+            {
+                var table = objDataContext.GetTable<T>();
+                return table.Where<T>(obj => true).ToList();
+            }
         }
 
-        public void Update(T obj)
-        {
-            //return GetTable.u
-        }
+        public abstract void Update(T obj);
 
 
-        public virtual T CreateInstance()
-        {
-            T entity = Activator.CreateInstance<T>();
-            GetTable.InsertOnSubmit(entity);
-            return entity;
-        }
 
-        private System.Data.Linq.Table<T> GetTable
-        {
-            get { return dataContext.GetTable<T>(); }
-        }
+        public abstract void DeleteById(int id);
+
+
     }
 }

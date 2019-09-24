@@ -3,3 +3,7 @@ D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\b
 D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
 D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\obj\Debug\UnitTestProject.dll
 D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\obj\Debug\UnitTestProject.pdb
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\bin\Debug\BusinessLogicLayer.exe
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\bin\Debug\ConsoleApplication1.exe
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\bin\Debug\BusinessLogicLayer.pdb
+D:\Артём\Учеба\BelNef\SQLServerPr\SqlDatabaseProject\UnitTestProject\bin\Debug\ConsoleApplication1.pdb

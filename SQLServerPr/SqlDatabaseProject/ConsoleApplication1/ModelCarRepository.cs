@@ -6,31 +6,38 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class ModelCarRepository : IRepository<ModelCar>
+    public class ModelCarRepository : Repository<ModelCar>
     {
-        public void Create(ModelCar obj)
+        public override void Create(ModelCar obj)
         {
-            throw new NotImplementedException();
+            using (DbDataContextDataContext objDataContext = new DbDataContextDataContext())
+            {
+                var table = objDataContext.GetTable<ModelCar>();
+                table.InsertOnSubmit(obj);
+                objDataContext.SubmitChanges();
+            }
         }
 
-        public void DeleteById(int id)
+        public override void DeleteById(int id)
         {
-            throw new NotImplementedException();
+            using (DbDataContextDataContext objDataContext = new DbDataContextDataContext())
+            {
+                var obj = objDataContext.model_cars.Single(element => element.id == id);
+                objDataContext.model_cars.DeleteOnSubmit(obj);
+                objDataContext.SubmitChanges();
+            }
         }
 
-        public ModelCar GetById(int id)
+        public override void Update(ModelCar obj)
         {
-            throw new NotImplementedException();
-        }
+            using (DbDataContextDataContext objDataContext = new DbDataContextDataContext())
+            {
+                var mc = objDataContext.model_cars.Single(element => element.id == obj.id);
+                mc.model = obj.model;
+                objDataContext.SubmitChanges();
+            }
 
-        public IEnumerable<ModelCar> GetListAll(Func<ModelCar, bool> exp)
-        {
-            throw new NotImplementedException();
-        }
 
-        public void Update(ModelCar obj)
-        {
-            throw new NotImplementedException();
         }
     }
 }

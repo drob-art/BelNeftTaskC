@@ -61,18 +61,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractModel.cs" />
     <Compile Include="ColorRepository.cs" />
     <Compile Include="DbDataContext.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DbDataContext.dbml</DependentUpon>
     </Compile>
-    <Compile Include="ModelCarRepository.cs" />
-    <Compile Include="GosNumberRepository.cs" />
     <Compile Include="GosNumber.cs" />
+    <Compile Include="GosNumberRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="ModelCar.cs" />
+    <Compile Include="ModelCarRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -94,6 +95,7 @@
       <LastGenOutput>DbDataContext.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

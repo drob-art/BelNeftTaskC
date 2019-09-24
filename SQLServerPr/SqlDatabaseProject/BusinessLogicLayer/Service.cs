@@ -4,9 +4,10 @@ using System.Collections.Generic;
 
 namespace ConsoleApplication1
 {
-    class Service<T> : IService<T> where T : class
+    public class Service<T> : IService<T> where T : AbstractModel
     {
-        IRepository<T> repository;
+        protected IRepository<T> repository;
+
         public void Create(T obj)
         {
            repository.Create(obj);
@@ -22,9 +23,9 @@ namespace ConsoleApplication1
             return repository.GetById(id);
         }
 
-        public IEnumerable<T> GetListAll(Func<T, bool> exp)
+        public ICollection<T> GetListAll()
         {
-            return repository.GetListAll(exp);
+            return repository.GetListAll();
         }
 
         public void Update(T obj)

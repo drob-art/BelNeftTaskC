@@ -6,45 +6,36 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class ColorRepository : IRepository<Color>
+    public class ColorRepository : Repository<Color>
     {
-        protected DbDataContextDataContext dataContext = new DbDataContextDataContext();
 
-        public void Create(Color obj)
+        public override void DeleteById(int id)
         {
-            throw new NotImplementedException();
+            using (DbDataContextDataContext objDataContext = new DbDataContextDataContext())
+            {
+                var obj = objDataContext.colors.Single(element => element.id == id);
+                objDataContext.colors.DeleteOnSubmit(obj);
+                objDataContext.SubmitChanges();
+            }
         }
 
-        public void DeleteById(int id)
+        public override void Update(Color obj)
         {
-            throw new NotImplementedException();
+            using (DbDataContextDataContext objDataContext = new DbDataContextDataContext())
+            {
+                var c = objDataContext.colors.Single(element => element.id == obj.id);
+                c.color1 = obj.color;
+                objDataContext.SubmitChanges();
+            }
         }
-
-        public Color GetById(int id)
+        public override void Create(Color obj)
         {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Color> GetListAll(Func<Color, bool> exp)
-        {
-            return GetTable.Where<Color>(exp);
-        }
-
-        public void Update(Color obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public virtual Color CreateInstance()
-        {
-            Color entity = Activator.CreateInstance<Color>();
-            GetTable.InsertOnSubmit(entity);
-            return entity;
-        }
-
-        private System.Data.Linq.Table<Color> GetTable
-        {
-            get { return dataContext.GetTable<Color>(); }
+            using (DbDataContextDataContext objDataContext = new DbDataContextDataContext())
+            {
+                var table = objDataContext.GetTable<Color>();
+                table.InsertOnSubmit(obj);
+                objDataContext.SubmitChanges();
+            }
         }
     }
 }
